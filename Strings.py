@@ -1,0 +1,358 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyMINkkC64WeqM8oTYRuuHVT",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/Anuska12q34/python-codes-collab/blob/main/Strings.py\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 9,
+      "metadata": {
+        "id": "lF44AgBqSSyz",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "255fdbb1-a432-475b-b935-04836fa8cdd0"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Hello!!\n",
+            "Welcome!!\n"
+          ]
+        }
+      ],
+      "source": [
+        "str = \"Hello!!Welcome!!\"\n",
+        "print(str[0:7])\n",
+        "#or print(str[:4])\n",
+        "print(str[7:])\n",
+        "# or print(str[7:len(str)]);\n",
+        "# or print(str[7:16])"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#NEGATIVE INDEXING\n",
+        "str= \"HOW ARE YOU DOING?\"\n",
+        "print(str[-19:-6])\n",
+        "print(str[-14:])"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "TQLtGdS0OLRh",
+        "outputId": "273e9ad7-4e53-413b-9b0d-ece998984a3d"
+      },
+      "execution_count": 14,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "HOW ARE YOU \n",
+            "ARE YOU DOING?\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "str=\"i am studying pythong for the first time.\"\n",
+        "print(str.endswith(\".\"))\n",
+        "str = str.capitalize()\n",
+        "print(str)\n",
+        "print(str.replace(\"first\",\"second\"))\n",
+        "print(str.find(\"for\"))\n",
+        "print(str.count(\"i\"))\n",
+        "print"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "88jeuVo_SrR4",
+        "outputId": "402bd768-966c-444a-b89c-eacc7328255b"
+      },
+      "execution_count": 17,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "True\n",
+            "I am studying pythong for the first time.\n",
+            "I am studying pythong for the second time.\n",
+            "22\n",
+            "3\n"
+          ]
+        },
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "<function print(*args, sep=' ', end='\\n', file=None, flush=False)>"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 17
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "name= input(\"Enter your name:\")\n",
+        "print(\"Length of your name is:\",len(name))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "K72kIO7xUKup",
+        "outputId": "a0f0bf28-9ce5-45e6-c3f7-6ba86bcbfff4"
+      },
+      "execution_count": 21,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter your name:Anuska\n",
+            "Length of your name is: 6\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "str= input(\"Enter your string:\")\n",
+        "print(\"The occurence of $ was about\",str.count(\"$\"))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "T8BLKTiTUmBd",
+        "outputId": "2ac808dd-a898-4aee-9f04-203890aeab03"
+      },
+      "execution_count": 27,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter your string:Hello your salary is $$$$$\n",
+            "The occurence of $ was about 5\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#Grading system\n",
+        "marks= int(input(\"Enter your marks:\"))\n",
+        "if(marks>=90 and marks<100):\n",
+        "    print(\"YOU GOT: PASS AND Grade A\")\n",
+        "elif(marks>=80 and marks<90):\n",
+        "    print(\"YOU GOT: PASS AND Grade B\")\n",
+        "elif(marks>=60 and marks<80):\n",
+        "    print(\"YOU GOT: PASS AND Grade C\")\n",
+        "elif(marks>=48 and marks<60):\n",
+        "    print(\"YOU GOT: PASS AND Grade D\")\n",
+        "elif(marks>-47 and marks>0):\n",
+        "    print(\"YOU GOT: FAIL\")\n",
+        "else:\n",
+        "    print(\"ENTER THE CORRECT MARKS!! LIEING BETWEEN 0 TO 100.\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Xox5LooZVj6Q",
+        "outputId": "72d6201f-2947-4473-b792-881e5e31917d"
+      },
+      "execution_count": 32,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter your marks:13\n",
+            "YOU GOT: FAIL\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#ODD EVEN CHOOSER\n",
+        "num=int(input(\"ENTER THE NUMBER:\"))\n",
+        "if(num%2==0):\n",
+        "   print(\"EVEN NUMBER\")\n",
+        "elif(num%2!=0):\n",
+        "   print(\"ODD NUMBER\")\n",
+        "else:\n",
+        "   print(\"ENTER THE CORRECT NUMBER !!\")\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "2VtVrrMTZP81",
+        "outputId": "c484ba6b-6e04-46bc-a0cf-dcc8d644c05f"
+      },
+      "execution_count": 33,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "ENTER THE NUMBER:43\n",
+            "ODD NUMBER\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#GREATEST AMOUNG ALL NUMBERS\n",
+        "num1=int(input(\"Enter the first number:\"))\n",
+        "num2=int(input(\"Enter the second number:\"))\n",
+        "num3=int(input(\"Enter the third number:\"))\n",
+        "if(num1>num2 and num1>num3):\n",
+        "     print(num1,\"IS THE LARGEST NUMBER\")\n",
+        "elif(num2>num1 and num2>num3):\n",
+        "     print(num2,\"IS THE LARGEST NUMBER\")\n",
+        "else:\n",
+        "     print(num3,\"IS THE LARGEST NUMBER\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "WoryrUqsp1r2",
+        "outputId": "d2c561ed-b6e2-4ac7-a130-8cfc52541cce"
+      },
+      "execution_count": 38,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter the first number:3\n",
+            "Enter the second number:1\n",
+            "Enter the third number:7\n",
+            "7 IS THE LARGEST NUMBER\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#TO CHECK IF THE NUMBER ENTERED IS A MULTIPLE OF 7\n",
+        "num=int((input(\"ENTER THE NUMBER:\")))\n",
+        "if(num%7==0):\n",
+        "   print(num,\"IS A MULTIPLE OF 7\")\n",
+        "else:\n",
+        "   print(num,\"IS NOT A MULTIPLE OF 7\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "D5twRsFJrHDk",
+        "outputId": "4d77fa33-01cd-4a4d-9e86-49be387694db"
+      },
+      "execution_count": 39,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "ENTER THE NUMBER:49\n",
+            "49 IS A MULTIPLE OF 7\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#SIMPLE CALCULATOR\n",
+        "num1=int(input(\"ENTER THE FIRST NUMBER:\"))\n",
+        "num2=int(input(\"ENTER THE SECOND NUMBER:\"))\n",
+        "op=input(\"ENTER THE OPERATOR FROM{+,-,*,/,%,**} :\")\n",
+        "if(op==\"+\"):\n",
+        "   print(\"THE SUM IS:\",num1+num2)\n",
+        "elif(op==\"-\"):\n",
+        "   if(num1<num2):\n",
+        "      print(\"THE DIFFERENCE IS:\",num2-num1)\n",
+        "   else:\n",
+        "      print(\"THE DIFFERENCE IS:\",num1-num2)\n",
+        "elif(op==\"*\"):\n",
+        "   print(\"THE PRODUCT IS:\",num1*num2)\n",
+        "elif(op==\"/\"):\n",
+        "   print(\"THE QUOTIENT IS:\",num1/num2)\n",
+        "elif(op==\"%\"):\n",
+        "   print(\"THE REMAINDER IS:\",num1%num2)\n",
+        "elif(op==\"**\"):\n",
+        "   print(\"THE POWER IS:\",num1**num2)\n",
+        "else:\n",
+        "   print(\"ENTER THE CORRECT OPERATOR!!\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "YOrrhD-tskNE",
+        "outputId": "cec8da2f-8bb7-4336-df7e-6c30b3981847"
+      },
+      "execution_count": 42,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "ENTER THE FIRST NUMBER:10\n",
+            "ENTER THE SECOND NUMBER:2\n",
+            "ENTER THE OPERATOR FROM{+,-,*,/,%,**} :+\n",
+            "THE SUM IS: 12\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
